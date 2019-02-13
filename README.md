@@ -67,4 +67,4 @@ Add to ```/etc/crontab``` line
 ```10  1   * * *   user    /home/user/logging/manual_GPS_upload.sh > /dev/null 2>&1```
 
 
-Thsi is related to own OpenStreetMaps server. You can follow instructions to build onw [https://github.com/admik007/openstreetmaps|here]
+Thsi is related to own OpenStreetMaps server. You can follow instructions to build own here - [https://github.com/admik007/openstreetmaps]
