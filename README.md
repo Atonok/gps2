@@ -1,26 +1,30 @@
 # camera_gps_python
 Get data from camera and gpsd via python
-```
+
 File, you need ....
+```
 gps_activate.sh
 mem_check.sh
 get_only_gps.py
 get_gps_data.sh
+```
 
 Optional (just for backup)
+```
 remote_backup.sh
-
+```
 
 Activate gps during boot
 add line to /etc/rc.local
-
+```
 ############ START HERE ############
 /root/scripts/gps_activate.sh
 ############ END HERE ############
+```
 
 Periodic check
 add lines to /etc/crontab
-
+```
 ############ START HERE ############
 # Check memory and swap status. Do "drop_caches", when limit is to low.
 * *     * * *   root    /root/scripts/mem_check.sh > /dev/null 2>&1
