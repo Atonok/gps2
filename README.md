@@ -1,7 +1,7 @@
 # camera_gps_python
-Get data from camera and gpsd via python
+Get data from camera and gpsd via python, and send it to web.
 
-Files, you need ....
+Files, you need on RPI device ....
 ```
 gps_activate.sh
 mem_check.sh
@@ -48,3 +48,16 @@ total 27428
 -rw-r--r-- 1 root root   846252 Feb 13 20:35 video_20190213_203507.h264
 -rw-r--r-- 1 root root 26683996 Feb 13 20:38 video_20190213_203605.h264
 ```
+Files, you need on server side ....
+```
+index.php
+osm.php
+locations.php
+database.sql
+```
+Import ```database.sql``` into your MySQL server.
+Other files ```*.php``` upload to you web server. Remember, the device will call http://url/index.php , so you can not rename the file. Othervise, you need correct entry in ```get_only_gps.py``` line 64. still you need correct the url, set your web.
+
+If you have shell access on server, you can set manual upload.
+Add to ```/etc/crontab``` line
+```10  1   * * *   user    /home/user/logging/manual_GPS_upload.sh > /dev/null 2>&1```
