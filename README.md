@@ -35,3 +35,15 @@ Periodic check, add lines to ```/etc/crontab```
 00 4    * * *   root    /root/scripts/remote_backup.sh > /var/log/remote_backup.log 2>&1
 00 6    * * *   root    killall rsync > /dev/null 2>&1
 ```
+.gpx and .h264 files are located ```/video```
+```
+SERVER /video # ls -l
+total 27428
+-rw-r--r-- 1 root root    58183 Feb  3 23:59 20190203.gpx
+-rw-r--r-- 1 root root   143773 Feb  4 23:59 20190204.gpx
+-rw-r--r-- 1 root root   123010 Feb  5 14:31 20190205.gpx
+-rw-r--r-- 1 root root   100178 Feb  9 23:59 20190209.gpx
+-rw-r--r-- 1 root root    94086 Feb 10 12:22 20190210.gpx
+-rw-r--r-- 1 root root   846252 Feb 13 20:35 video_20190213_203507.h264
+-rw-r--r-- 1 root root 26683996 Feb 13 20:38 video_20190213_203605.h264
+```
