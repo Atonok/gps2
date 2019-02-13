@@ -56,6 +56,10 @@ osm.php
 locations.php
 database.sql
 ```
+Optional (just for manual import .gpx)
+```
+manual_GPS_upload.sh
+```
 Import ```database.sql``` into your MySQL server.
 Other files ```*.php``` upload to you web server. Remember, the device will call http://url/index.php , so you can not rename the file. Othervise, you need correct entry in ```get_only_gps.py``` line 64. still you need correct the url, set your web.
 
