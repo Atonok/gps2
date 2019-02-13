@@ -1,6 +1,7 @@
 # camera_gps_python
 Get data from camera and gpsd via python, and send it to web.
 
+## Client side (Raspberry PI)
 Files, you need on RPI device ....
 ```
 gps_activate.sh
@@ -48,7 +49,7 @@ total 27428
 -rw-r--r-- 1 root root   846252 Feb 13 20:35 video_20190213_203507.h264
 -rw-r--r-- 1 root root 26683996 Feb 13 20:38 video_20190213_203605.h264
 ```
-Files, you need on server side ....
+## Server side (Linux)
 ```
 index.php
 osm.php
