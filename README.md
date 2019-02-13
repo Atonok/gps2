@@ -1,4 +1,4 @@
-## Get data from camera and gpsd via python, and send it to web.
+## Get data from camera and gpsd via python, and send it to the web.
 
 ### Client side (Raspberry PI)
 Files, you need on RPI device ....
@@ -65,3 +65,6 @@ Other files ```*.php``` upload to you web server. Remember, the device will call
 If you have shell access on server, you can set manual upload.
 Add to ```/etc/crontab``` line
 ```10  1   * * *   user    /home/user/logging/manual_GPS_upload.sh > /dev/null 2>&1```
+
+
+Thsi is related to own OpenStreetMaps server. You can follow instructions to build onw [https://github.com/admik007/openstreetmaps|here]
