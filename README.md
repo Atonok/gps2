@@ -7,6 +7,7 @@ gps_activate.sh
 mem_check.sh
 get_only_gps.py
 get_gps_data.sh
+get_data.py
 ```
 Optional (just for backup)
 ```
